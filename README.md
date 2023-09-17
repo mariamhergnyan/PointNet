@@ -1,5 +1,8 @@
 # 3D Object Classification with PointNet
 
+
+The data can be downloaded from the following link: https://modelnet.cs.princeton.edu/
+
 Run the `train_pointnet.py` script in order to lanch training. 
 ## Hyper Parameters tuning with Ray
 
