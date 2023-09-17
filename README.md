@@ -8,8 +8,8 @@ These are defined by a dictionary called config in the __main__ function at the 
 If more hyperparameters are needed, one must also modify the train_loop_per_worker function to
 use them in the training loop. If one needs to customize the search look in the __main__ function where ray is used.
 
-The model is imported as `VoxNet` in `src.models.voxnet` at the beginning of the script. If you wish to use 
-a different model, either modify the class in `src.models.voxnet`, or import a different one, and make sure
+The model is imported as `PoinNet` in `src.models.pointnet` at the beginning of the script. If you wish to use 
+a different model, either modify the class in `src.models.pointnet`, or import a different one, and make sure
 that the train loop uses the intended model.
 
 Before running the `tune.py` script, make sure that you run this in the CLI:
