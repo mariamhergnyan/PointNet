@@ -1,6 +1,6 @@
 # 3D Object Classification with PointNet
 
-
+Run the `train_pointnet.py` script in order to lanch training. 
 ## Hyper Parameters tuning with Ray
 
 The `tune.py` script contains all the required code to run K samples from a space of hyperparameters.
