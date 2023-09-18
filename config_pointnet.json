@@ -1,0 +1,1 @@
+{"lr": 0.0001, "batch_size": 64, "model": {"conv1a_out": 64, "conv2a_out": 128, "conv3a_out": 1024}}
