@@ -32,7 +32,7 @@ run_dir = os.path.join(os.getcwd(), 'debug_run', run_name)
 os.makedirs(run_dir, exist_ok=True)
 
 # Initialize datasets
-metadata_path = '/dataNfs/modelnet10/metadata.parquet'
+metadata_path = '/dataNfs/modelnet40/metadata.parquet'
 
 
 def get_model_net_40(datadir, batch_size, num_points):
