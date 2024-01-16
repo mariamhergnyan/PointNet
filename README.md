@@ -1,6 +1,5 @@
 # 3D Object Classification with PointNet
 
-This is a project for Neural Networks and Deep Learning course. 
 The original paper used for inspiration is from the following link: https://arxiv.org/abs/1612.00593
 The data can be downloaded from the following link: https://modelnet.cs.princeton.edu/
 
