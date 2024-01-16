@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
 from torchvision import transforms
 from src.pointNetDataset import ModelNet, RandomRotateTransform, RandomJitterTransform, ScaleTransform
-from src.models.pointnet_40 import PointNet
+from src.models.pointnet_10 import PointNet
 
 # Set the device to GPU if available, otherwise CPU
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -32,10 +32,10 @@ run_dir = os.path.join(os.getcwd(), 'debug_run', run_name)
 os.makedirs(run_dir, exist_ok=True)
 
 # Initialize datasets
-metadata_path = '/dataNfs/modelnet40/metadata.parquet'
+metadata_path = '/dataNfs/modelnet10/metadata.parquet'
 
 
-def get_model_net_40(datadir, batch_size, num_points):
+def get_model_net_10(datadir, batch_size, num_points):
     transform = transforms.Compose([
         RandomRotateTransform(),
         RandomJitterTransform(),
@@ -51,7 +51,7 @@ def get_model_net_40(datadir, batch_size, num_points):
     return train_loader, test_loader
 
 
-train_loader, test_loader = get_model_net_40(metadata_path, batch_size=config['batch_size'], num_points=1024)
+train_loader, test_loader = get_model_net_10(metadata_path, batch_size=config['batch_size'], num_points=1024)
 
 # Initialize PointNet model
 net = PointNet(use_dropout = False).to(device)
